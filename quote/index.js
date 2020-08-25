@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
   let i = Math.floor(Math.random() * quotes.length);
   $('#text').text(quotes[i]);
   $('#author').text('- ' + authors[i]);
+  $("#tweet-quote").attr("href", `https://twitter.com/intent/tweet?text=${quotes[i]}\n--${authors[i]}`);
 });
   
 
