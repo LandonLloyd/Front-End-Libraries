@@ -1,0 +1,40 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+#quote-box{
+  height: 50vh;
+  width: 50vw;
+  background-color: blue;
+  text-align: center;
+  margin: auto;
+}
+#quote-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-quote{
+  height: 10vh;
+  width: 50vw;
+  font-weight: bold;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+#author{
+  font-weight: bold;
+}
+
+#tweet-quote{
+  height: 10vh;
+  width: 50vw;
+}
