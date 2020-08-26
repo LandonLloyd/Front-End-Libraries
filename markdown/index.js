@@ -1,9 +1,10 @@
 //load things when page loads
-document.addEventListener('DOMContentLoaded', function load(){
-  $('#editor').val('# Markdown Previewer: ## Made by Landon Lloyd');
+window.onload = (event) => {
+  $('#editor').val('# Markdown Previewer: \n ## Made by Landon Lloyd');
 
   $('#preview').html($('#editor').val());
-});
+};
+
 
 //import marked
 marked.setOptions({
