@@ -1,15 +1,18 @@
 //load things when page loads
 window.onload = (event) => {
-  $('#editor').val("# Markdown Previewer: \n ## Made by [Landon Lloyd](https://landonlloyd.github.io/) \n This is inline code `<div></div>` And this is multi-line code:
-```
+  $('#editor').val(`# Markdown Previewer:
+  ## Made by [Landon Lloyd](https://landonlloyd.github.io/)
+  This is inline code \`<div></div>\` And this is multi-line code:
+\`\`\`
+
 // this is multi-line code:
 
 function anotherExample(firstLine, lastLine) {
-  if (firstLine == \'```\' && lastLine == \'```\') {
+  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
     return multiLineCode;
   }
 }
-```");
+\`\`\``);
 
   $('#preview').html(marked($('#editor').val()));
 };
