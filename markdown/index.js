@@ -1,6 +1,6 @@
 //load things when page loads
 window.onload = (event) => {
-  $('#editor').val('# Markdown Previewer: \n ## Made by Landon Lloyd');
+  $('#editor').val('# Markdown Previewer: \n ## Made by [Landon Lloyd](https://landonlloyd.github.io/)');
 
   $('#preview').html($('#editor').val());
 };
