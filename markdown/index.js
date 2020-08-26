@@ -12,7 +12,11 @@ function anotherExample(firstLine, lastLine) {
     return multiLineCode;
   }
 }
-\`\`\``);
+\`\`\`
+
+This is a block quote
+> Hi guys!
+`);
 
   $('#preview').html(marked($('#editor').val()));
 };
