@@ -1,7 +1,8 @@
 //load things when page loads
 window.onload = (event) => {
   $('#editor').val(`# Markdown Previewer:
-  ## Made by [Landon Lloyd](https://landonlloyd.github.io/)
+  ## Made by Landon Lloyd
+ ### [Github](https://landonlloyd.github.io/)
   This is inline code \`<div></div>\` And this is multi-line code:
 \`\`\`
 
