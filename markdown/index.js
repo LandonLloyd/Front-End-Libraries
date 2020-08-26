@@ -1,3 +1,10 @@
+//load things when page loads
+document.addEventListener('DOMContentLoaded', function load(){
+  $('#editor').val('# Markdown Previewer: ## Made by Landon Lloyd');
+
+  $('#preview').html($('#editor').val());
+});
+
 //import marked
 marked.setOptions({
   breaks: true,
@@ -8,6 +15,6 @@ marked.setOptions({
 
 //Make text update every keystroke
 $('#editor').keyup(function changeVal(){
-  $('#preview').html($('#editor').val());
+  $('#preview').html(marked($('#editor').val()));
 });
 
