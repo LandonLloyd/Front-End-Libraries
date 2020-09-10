@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drum Machine</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="drum-machine">
+      <div id="drum-pads">
+         <button class="drum-pad" id="drum-pad-Q" onClick="playSound('Q')">
+          Q <audio class="clip" id="Q"
+          src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
+        </button>
+        
+        <button class="drum-pad" id="drum-pad-W" onClick="playSound('W')">
+          W <audio class="clip" id="W"
+          src='https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3'></audio>
+        </button>
+        
+         <button class="drum-pad" id="drum-pad-E" onClick="playSound('E')">
+          E <audio class="clip" id="E"
+          src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>
+        </button>
+        
+         <button class="drum-pad" id="drum-pad-A" onClick="playSound('A')">
+          A <audio class="clip" id="A"
+          src='https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3'></audio>
+        </button>
+        
+        <button class="drum-pad" id="drum-pad-S" onClick="playSound('S')">
+          S <audio class="clip" id="S"
+          src='https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3'></audio>
+        </button>
+        
+        <button class="drum-pad" id="drum-pad-D" onClick="playSound('D')">
+          D <audio class="clip" id="D"
+          src='https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3'></audio>
+        </button>
+        
+        <button class="drum-pad" id="drum-pad-Z" onClick="playSound('Z')">
+          Z <audio class="clip" id="Z"
+          src='https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3'></audio>
+        </button>
+        
+        <button class="drum-pad" id="drum-pad-X" onClick="playSound('X')">
+          X <audio class="clip" id="X"
+          src='https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3'></audio>
+        </button>
+        
+        <button class="drum-pad" id="drum-pad-C" onClick="playSound('C')">
+          C <audio class="clip" id="C"
+          src='https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3'></audio>
+        </button>
+        </div>
+        
+        <p id="display"></p>
+      
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
