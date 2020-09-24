@@ -1,0 +1,40 @@
+body{
+  background-color: #404040;
+}
+
+#wrapper{
+  background-color: gray;
+  margin: auto;
+  height: 80vh;
+  width: 27%;
+  border: 0.01vh solid black;
+}
+
+#display-area{
+  background-color: white;
+  border: 0.01vh solid black;
+  height: 15vh;
+  
+}
+
+.number{
+  height: 9vh;
+  width: 8vw;
+}
+
+.function{
+  height: 10vh;
+  width: 12.5vw;
+}
+
+
+button{
+  margin: 5px;
+}
+
+#display{
+  overflow-x: none;
+  overflow-y: none;
+  font-size: 4vh;
+  font-family: 'Grandstander', helvetica, sans-serif;
+}
