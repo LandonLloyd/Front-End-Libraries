@@ -1,5 +1,4 @@
 let check = true;
-let check0 = true;
 
 $('#clear').click(function clear(){
   $('#display').html('0');
@@ -8,9 +7,9 @@ $('#clear').click(function clear(){
 
 function addDisplay(num){
   
-  if(num === 0 && check0 === true && $('#display').text().startsWith('0')){
-    $('#display').text('0');
-    check0 = false;
+  if(num === '0' && $('#display').html().startsWith('0')){
+    $('#display').html('');
+    
   }
   
   if(check === true){
