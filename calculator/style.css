@@ -5,8 +5,9 @@ body{
 #wrapper{
   background-color: gray;
   margin: auto;
-  height: 80vh;
+  min-height: 80vh;
   width: 27%;
+  min-width: 400px;
   border: 0.01vh solid black;
 }
 
@@ -17,19 +18,23 @@ body{
   
 }
 
+#other {
+  width: 100%;
+}
+
 .number{
   height: 9vh;
-  width: 8vw;
+  width: 28.4%;
 }
 
 .function{
   height: 10vh;
-  width: 12.5vw;
+  width: 45%;
 }
 
 
 button{
-  margin: 5px;
+  margin: 2%;
 }
 
 #display{
@@ -38,3 +43,4 @@ button{
   font-size: 4vh;
   font-family: 'Grandstander', helvetica, sans-serif;
 }
+
