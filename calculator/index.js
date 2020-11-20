@@ -8,7 +8,8 @@ $('#clear').click(function clear(){
 function addDisplay(num){
   
   if(num === '0' && $('#display').html().startsWith('0')){
-    $('#display').html('');
+    $('#display').html('0');
+    return;
     
   }
   
@@ -19,7 +20,6 @@ function addDisplay(num){
   $('#display').append(num);
   check = false;
   
-  
 }
 
 function answer(){
@@ -28,5 +28,3 @@ function answer(){
   $('#display').html(value);
   check = true;
 }
-
-
