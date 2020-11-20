@@ -33,7 +33,7 @@ function addDisplay(num){
     $("#display").append(num);
     decimalCheck = true;
   }
-  if(num !== "." || "+" || "-" || "/" || "*"){
+  if(num !== "." || num !== "+" || num !== "-" || num !== "/" || num!== "*"){
     $("#display").append(num);
     check = false;
   }
