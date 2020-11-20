@@ -1,7 +1,7 @@
 let check = true;
 
 $('#clear').click(function clear(){
-  $('#display').html('0');
+  $('#display').text('0');
   check = true;
 });
 
@@ -17,8 +17,26 @@ function addDisplay(num){
     $('#display').html('');
   }
   
-  $('#display').append(num);
-  check = false;
+  //NEW CODE
+  
+  let decimalCheck = true;
+  
+  if(num === "." && decimalCheck === true){
+    console.log(num && decimalCheck);
+    $("#display").append(num);
+    decimalCheck = false;
+  }else if(decimalCheck === false){
+    return;
+  }
+  if(num === "+" || num === "-" || num === "/" || num === "*" && decimalCheck === false){
+    console.log(num && decimalCheck);
+    $("#display").append(num);
+    decimalCheck = true;
+  }
+  if(num !== "." || "+" || "-" || "/" || "*"){
+    $("#display").append(num);
+    check = false;
+  }
   
 }
 
