@@ -8,14 +8,13 @@
 
 #title{
   font-size: 5em;
+}
+
+#text{
+  font-size: 2em;
   border-bottom: 1px solid white;
 }
 
 .projLink{
-  text-decoration: none;
   font-size: 3em;
-}
-
-.projLink:hover{
-  text-decoration: underline;
 }
